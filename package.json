@@ -1,0 +1,47 @@
+{
+  "name": "apollo-server-typescript-starter",
+  "version": "1.0.0",
+  "description": "A small setup for an apollo server written in typescript",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test",
+    "ts": "webpack --watch",
+    "nodemon": "nodemon --watch dist dist/server.js",
+    "start": "concurrently \"npm run ts\" \"npm run nodemon\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaveOfCodeBlog/Apollo-Typescript-Starter.git"
+  },
+  "keywords": [
+    "Apollo",
+    "GraphQL",
+    "Node",
+    "Server",
+    "Typescript"
+  ],
+  "author": "Jesper O. Christensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CaveOfCodeBlog/Apollo-Typescript-Starter/issues"
+  },
+  "homepage": "https://github.com/CaveOfCodeBlog/Apollo-Typescript-Starter#readme",
+  "dependencies": {
+    "@types/body-parser": "0.0.33",
+    "@types/express": "4.0.34",
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "graphql": "0.7.2",
+    "graphql-server-express": "0.4.3",
+    "graphql-subscriptions": "0.2.2",
+    "graphql-tools": "0.8.4"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "3.0.0-beta.17",
+    "concurrently": "3.1.0",
+    "nodemon": "1.11.0",
+    "typed-graphql": "1.0.2",
+    "typescript": "2.1.4",
+    "webpack": "1.14.0"
+  }
+}
